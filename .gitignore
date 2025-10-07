@@ -3,3 +3,8 @@ cache/
 chroot/
 .lock
 build.log
+config/binary
+config/bootstrap
+config/chroot
+config/common
+config/source
