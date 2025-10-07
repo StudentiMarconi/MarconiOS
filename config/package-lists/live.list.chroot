@@ -2,6 +2,8 @@ live-boot
 live-config
 live-config-systemd
 systemd-sysv
+grub
+efibootmgr
 gnome
 calamares
 calamares-settings-debian
