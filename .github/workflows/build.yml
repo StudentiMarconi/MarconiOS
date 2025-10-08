@@ -13,9 +13,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo add-apt-repository universe
           sudo apt-get update
-          sudo apt-get install -y live-build squashfs-tools live-boot live-config xorriso isolinux netselect-apt
+          sudo apt-get install -y live-build squashfs-tools live-boot live-config xorriso isolinux
 
       - name: Build ISO
         run: |
