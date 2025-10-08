@@ -1,0 +1,29 @@
+name: Build MarconiOS ISO
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y live-build squashfs-tools live-boot live-config xorriso isolinux netselect-apt
+
+      - name: Build ISO
+        run: |
+          set -e
+          sudo lb clean --cache
+          sudo lb build
+
+      - name: Save ISO as Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: iso-artifact
+          path: ./*.iso
