@@ -8,3 +8,7 @@ config/bootstrap
 config/chroot
 config/common
 config/source
+live-image-amd64.*
+chroot.*
+binary.*
+binary/
