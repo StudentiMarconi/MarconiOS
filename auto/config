@@ -4,6 +4,7 @@ set -e
 
 lb config noauto \
 	--mode debian \
+	--distribution trixie \
 	--architectures amd64 \
 	--debian-installer false \
 	--archive-areas "main contrib non-free non-free-firmware" \
