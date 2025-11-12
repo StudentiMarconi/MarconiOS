@@ -9,4 +9,6 @@ lb config noauto \
 	--debian-installer false \
 	--archive-areas "main contrib non-free non-free-firmware" \
 	--memtest none \
+	--bootappend-live "locale=it_IT.UTF-8" \
+	--locale "it_IT.UTF-8" \
 	"${@}"
