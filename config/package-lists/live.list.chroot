@@ -2,8 +2,6 @@ live-boot
 live-config
 live-config-systemd
 systemd-sysv
-grub
-efibootmgr
 gnome
 calamares
 calamares-settings-debian
@@ -22,4 +20,3 @@ xfsprogs
 jfsutils
 reiserfsprogs
 ntfs-3g
-grub-efi-amd64-bin
